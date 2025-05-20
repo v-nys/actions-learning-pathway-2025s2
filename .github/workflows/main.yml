@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Echo repository variable
-      run: echo "My repository environment variable is ${{ variables.MY_NAME }}"
+      run: echo "My repository environment variable is $MY_NAME"
     - name: Echo environment variable
       run: echo "My environment variable is $MY_VARIABLE" # This is your variable that will not be masked
     - name: Echo GitHub secret
